@@ -1,0 +1,194 @@
+configuration {
+    modi: "drun,window,run,ssh";
+    font: "JetBrains Mono Nerd Font Bold 13";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "Applications:";
+    display-window: "Windows:";
+    display-run: "Run:";
+    display-ssh: "SSH:";
+    drun-display-format: "{name}";
+    disable-history: false;
+    hide-scrollbar: true;
+    sidebar-mode: false;
+    location: 0;
+    anchor: center;
+    width: 50;
+    lines: 5;
+    columns: 1;
+}
+
+* {
+    /* Breeze-compatible space theme colors */
+    bg-primary: #232629;
+    bg-secondary: #2a2e32;
+    bg-selected: #3daee9;
+    bg-selected-highlight: #2980b9;
+    
+    text-primary: #eff0f1;
+    text-secondary: #bdc3c7;
+    text-selected: #232629;
+    
+    accent-blue: #3daee9;
+    accent-purple: #9b59b6;
+    border-color: #4d4d4d;
+    
+    background-color: transparent;
+    text-color: @text-primary;
+    font: "JetBrains Mono Nerd Font Bold 13";
+}
+
+window {
+    transparency: "real";
+    background-color: @bg-primary;
+    border: 2px solid;
+    border-color: @border-color;
+    border-radius: 6px;
+    padding: 0px;
+    width: 600px;
+    location: center;
+    anchor: center;
+    x-offset: 0;
+    y-offset: 0;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ "inputbar", "listview" ];
+    spacing: 0px;
+    padding: 20px;
+}
+
+inputbar {
+    background-color: @bg-secondary;
+    text-color: @text-primary;
+    border: 2px solid;
+    border-color: @border-color;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 0px 0px 20px 0px;
+    children: [ "prompt", "entry" ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @accent-blue;
+    margin: 0px 10px 0px 0px;
+    font: "JetBrains Mono Bold 13";
+}
+
+entry {
+    background-color: transparent;
+    text-color: @text-primary;
+    placeholder-color: @text-secondary;
+    placeholder: "Type to filter";
+    cursor-color: @accent-blue;
+}
+
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 5;
+    spacing: 4px;
+    cycle: true;
+    dynamic: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+}
+
+element {
+    background-color: transparent;
+    text-color: @text-primary;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 2px 0px;
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @text-primary;
+}
+
+element normal.urgent {
+    background-color: #da3633;
+    text-color: @text-primary;
+}
+
+element normal.active {
+    background-color: @accent-purple;
+    text-color: @bg-primary;
+}
+
+element selected.normal {
+    background-color: @bg-selected;
+    text-color: @text-selected;
+}
+
+element selected.urgent {
+    background-color: #da3633;
+    text-color: @text-primary;
+}
+
+element selected.active {
+    background-color: @accent-purple;
+    text-color: @bg-primary;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @text-primary;
+}
+
+element alternate.urgent {
+    background-color: #da3633;
+    text-color: @text-primary;
+}
+
+element alternate.active {
+    background-color: @accent-purple;
+    text-color: @bg-primary;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 32px;
+    cursor: inherit;
+    margin: 0px 12px 0px 0px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    cursor: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
+
+/* Scrollbar styling */
+scrollbar {
+    width: 4px;
+    border: 0;
+    handle-width: 4px;
+    padding: 0;
+    handle-color: @accent-blue;
+    background-color: @bg-secondary;
+}
+
+/* Message styling for errors/info */
+message {
+    background-color: @bg-secondary;
+    border: 2px solid;
+    border-color: @border-color;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 0px 0px 20px 0px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: @text-secondary;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
