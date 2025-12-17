@@ -19,12 +19,14 @@ bindkey '^[[1;5C' forward-word
 # Use starship baby
 eval "$(starship init zsh)"
 
-# alias for my lazy fingers
-alias "l"="ls -l" 
-alias "la"="ls -a"
-alias "fetch"="fastfetch"
-alias "vim"="nvim"
+# use tmux baby
+# tmux
 
+# alias for my lazy fingers
+alias "l"="ls -la" 
+alias "la"="ls -a"
+alias "fetch"="fastfetch --logo ~/.config/fastfetch/logo.txt"
+alias "vim"="nvim"
 
 # history config
 # Add these to your ~/.zshrc

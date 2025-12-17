@@ -2,7 +2,7 @@
 AntiAliasFonts=true
 BoldIntense=true
 ColorScheme=Monokai Pro
-Font=JetBrainsMono Nerd Font,15,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
+Font=JetBrainsMono Nerd Font,16,-1,5,600,0,0,0,0,0,0,0,0,0,0,1,SemiBold
 TabColor=20,22,24,0
 UseFontLineChararacters=true
 
