@@ -25,7 +25,7 @@ eval "$(starship init zsh)"
 # alias for my lazy fingers
 alias "l"="ls -la" 
 alias "la"="ls -a"
-alias "fetch"="fastfetch --logo ~/.config/fastfetch/logo.txt"
+alias "fetch"="fastfetch --logo ~/.config/fastfetch/logo.txt --logo-color-1 white"
 alias "vim"="nvim"
 
 # history config
